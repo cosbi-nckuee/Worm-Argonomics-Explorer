@@ -43,7 +43,7 @@ Do not stop Docker while the analysis is running.
 Open a terminal and run:
 
 ```bash
-docker pull cosbincku/wago:latest
+docker pull cosbincku/wae:latest
 ```
 
 ---
@@ -186,9 +186,9 @@ Use IP mode for Argonaute IP/input analysis.
 
 ```bash
 docker run --rm \
-    --name wago \
+    --name wae \
     -v {/your/local/folder}:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    -it cosbincku/wae:latest \
     bash run.sh IP
 ```
 
@@ -204,9 +204,9 @@ Example:
 
 ```bash
 docker run --rm \
-    --name wago \
-    -v /home/user/wago_fastq:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    --name wae \
+    -v /home/user/wae_fastq:/WormArgonomicsExplorer/in_out_file \
+    -it cosbincku/wae:latest \
     bash run.sh IP
 ```
 
@@ -218,9 +218,9 @@ Use MUT mode for Argonaute mutant/wild-type analysis.
 
 ```bash
 docker run --rm \
-    --name wago \
+    --name wae \
     -v {/your/local/folder}:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    -it cosbincku/wae:latest \
     bash run.sh MUT
 ```
 
@@ -228,9 +228,9 @@ Example:
 
 ```bash
 docker run --rm \
-    --name wago \
-    -v /home/user/wago_fastq:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    --name wae \
+    -v /home/user/wae_fastq:/WormArgonomicsExplorer/in_out_file \
+    -it cosbincku/wae:latest \
     bash run.sh MUT
 ```
 
@@ -397,9 +397,9 @@ Then run:
 
 ```bash
 docker run --rm \
-    --name wago \
+    --name wae \
     -v /your/local/folder:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    -it cosbincku/wae:latest \
     bash run.sh IP
 ```
 
@@ -423,9 +423,9 @@ Then run:
 
 ```bash
 docker run --rm \
-    --name wago \
+    --name wae \
     -v /your/local/folder:/WormArgonomicsExplorer/in_out_file \
-    -it cosbincku/wago \
+    -it cosbincku/wae:latest \
     bash run.sh MUT
 ```
 
